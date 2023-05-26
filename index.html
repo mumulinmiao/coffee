@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <!-- 引入bootstrap的Css文件 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- 引入awesome的图标 -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- 引入自定义的Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入自定义js -->
+    <script src="../js/Script.js"></script>
+
+
+</head>
+    <video src="media/bgm2.mp3" autoplay hidden></video>
+
+
+<body>
+    <!-- 导航条 -->
+    <nav class="navbar navbar-fixed-top" id="nav">
+        <div class="container">
+            <div class="navbar-header">
+
+                <div class="toolbar right">
+                    <button type="button" class="navbar-toggle btnuser" data-toggle="modal" data-target="#myModal">
+                        <i class="fa fa-user"></i>
+                    </button>
+
+                    <button type="button" class="navbar-toggle collapsed" id="navbtn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <i class="fa fa-navicon fa-1x" id="navicon"></i>
+                        <i class="fa fa-times fa-1x" id="navicon"></i>
+
+                    </button>
+
+                </div>
+
+
+                <a class="navbar-brand logo" href="#">
+                    <!-- logo -->
+                    <i class="fa fa-coffee fa-1x"></i>
+                    <span>Coffee</span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" id="navbar">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#menu">menu</a></li>
+                    <li><a href="#gallery">gallery</a></li>
+                    <li><a href="#reviews">reviews</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- 焦点图模块 -->
+    <section class="home" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="jumbotron">
+                    <div class="col-md-6">
+                        <h2><small>Coffee house</small></h2>
+                        <h1>start your day with our coffee</h1>
+                        <p><a class="btn btn-primary btn-lg" href="#" role="button">get started</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 关于模块 -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 hidden-xs">
+                    <img class="img-responsive" src="images/about-img-1.png" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h2><small>why choose us?</small></h2>
+                    <h2>The Best salad Maker In The Town</h2>
+                    <p class="">We insist on making the best salad with the freshest ingredients. Let's start a healthy journey and keep fit. Our main products are salad, fitness meal, European bread, all kinds of salad dressing, etc</p>
+
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">read more</a></p>
+
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-4 icon-box">
+                            <div class="icons text-center">
+                                <i class="fa fa-cutlery fa-3x"></i>
+                                <p>Best salad</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4 icon-box">
+                            <div class="icons text-center">
+                                <i class="fa fa-headphones fa-3x"></i>
+                                <p>Best salad</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4 icon-box">
+                            <div class="icons text-center">
+                                <i class="fa fa-bus fa-3x"></i>
+                                <p>Best salad</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 菜单模块(menu) -->
+    <!-- 页头 -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="page-header">
+                <h1>Our Menu</h1>
+            </div>
+
+            <div class="row">
+                <!-- 第一个菜单 -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <img class="img-responsive" src="images/menu-1.png" alt="...">
+                            <h3>mixed salad</h3>
+                            <p>Il s'agit du texte de la description du produit, qui est édité en fonction du contenu.
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- 第二个菜单 -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <img class="img-responsive" src="images/menu-2.png" alt="...">
+                            <h3>mixed salad</h3>
+                            <p>Il s'agit du texte de la description du produit, qui est édité en fonction du contenu.
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- 第三个菜单 -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <img class="img-responsive" src="images/menu-3.png" alt="...">
+                            <h3>mixed salad</h3>
+                            <p>Il s'agit du texte de la description du produit, qui est édité en fonction du contenu.
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- 第四个菜单 -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <img class="img-responsive" src="images/menu-4.png" alt="...">
+                            <h3>mixed salad</h3>
+                            <p>Il s'agit du texte de la description du produit, qui est édité en fonction du contenu.
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- 第五个菜单 -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <img class="img-responsive" src="images/menu-5.png" alt="...">
+                            <h3>mixed salad</h3>
+                            <p>Il s'agit du texte de la description du produit, qui est édité en fonction du contenu.
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- 第六个菜单 -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <img class="img-responsive" src="images/menu-6.png" alt="...">
+                            <h3>mixed salad</h3>
+                            <p>Il s'agit du texte de la description du produit, qui est édité en fonction du contenu.
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 相册模块(gallery) -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="page-header">
+                <h1>gallery</h1>
+            </div>
+            <div class="row">
+                <!-- 第1个照片 -->
+                <div class="col-sm-6 col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img class="img-responsive" src="images/g-img-1.jpg" alt="...">
+
+                        <div class="content">
+                            <h3>green salad</h3>
+                            <p>Il s'agit du texte de la description du produit, qui est édité en fonction du contenu.
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </div>
+                    </a>
+                </div>
+                <!-- 第2个照片 -->
+                <div class="col-sm-6 col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img class="img-responsive" src="images/g-img-2.jpg" alt="...">
+
+                        <div class="content">
+                            <h3>green salad</h3>
+                            <p>Il s'agit du texte de la description du produit, qui est édité en fonction du contenu.
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </div>
+                    </a>
+                </div>
+                <!-- 第3个照片 -->
+                <div class="col-sm-6 col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img class="img-responsive" src="images/g-img-3.jpg" alt="...">
+
+                        <div class="content">
+                            <h3>green salad</h3>
+                            <p>Il s'agit du texte de la description du produit, qui est édité en fonction du contenu.
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </div>
+                    </a>
+                </div>
+                <!-- 第4个照片 -->
+                <div class="col-sm-6 col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img class="img-responsive" src="images/g-img-4.jpg" alt="...">
+
+                        <div class="content">
+                            <h3>green salad</h3>
+                            <p>Il s'agit du texte de la description du produit, qui est édité en fonction du contenu.
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </div>
+                    </a>
+                </div>
+                <!-- 第5个照片 -->
+                <div class="col-sm-6 col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img class="img-responsive" src="images/g-img-5.jpg" alt="...">
+
+                        <div class="content">
+                            <h3>green salad</h3>
+                            <p>Il s'agit du texte de la description du produit, qui est édité en fonction du contenu.
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </div>
+                    </a>
+                </div>
+                <!-- 第6个照片 -->
+                <div class="col-sm-6 col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img class="img-responsive" src="images/g-img-6.jpg" alt="...">
+
+                        <div class="content">
+                            <h3>green salad</h3>
+                            <p>Il s'agit du texte de la description du produit, qui est édité en fonction du contenu.
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 反馈模块 -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="page-header">
+                <h1>Reviews</h1>
+            </div>
+            <div class="row">
+                <!-- 第1个反馈 -->
+                <div class="col-md-4">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <img class="img-responsive" src="images/pic-1.png" alt="...">
+                            <h3>Fooldy Chi</h3>
+                            <p>C'est le texte de la rétroaction d'évaluation de l'utilisateur, qui est édité en fonction du contenu.</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- 第2个反馈 -->
+                <div class="col-md-4">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <img class="img-responsive" src="images/pic-2.png" alt="...">
+                            <h3>Fooldy Chi</h3>
+                            <p>C'est le texte de la rétroaction d'évaluation de l'utilisateur, qui est édité en fonction du contenu.</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- 第3个反馈 -->
+                <div class="col-md-4">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <img class="img-responsive" src="images/pic-3.png" alt="...">
+                            <h3>Fooldy Chi</h3>
+                            <p>C'est le texte de la rétroaction d'évaluation de l'utilisateur, qui est édité en fonction du contenu.</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系模块 -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="page-header">
+                <h1>Contact</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="icons text-center">
+                        <i class="fa fa-phone fa-3x"></i>
+                        <h3>Phone</h3>
+                        <p>+123-456-7890</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="icons text-center">
+                        <i class="fa fa-envelope-o fa-3x"></i>
+                        <h3>Email</h3>
+                        <p>fooldy@qq.com</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="icons text-center">
+                        <i class="fa fa-map fa-3x"></i>
+                        <h3>Address</h3>
+                        <p>GuangZhou, China-40001</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 地图 -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="map">
+                        <iframe src="map.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <h3>Get in Touch</h3>
+                        <form action="" method="post">
+                            <input class="form-control" type="text" placeholder="Name" name="" id="">
+                            <input class="form-control" type="email" placeholder="Email" name="" id="">
+                            <input class="form-control" type="text" placeholder="Phone" name="" id="">
+                            <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Message"></textarea>
+                            <input class="btn btn-default btn-lg" type="submit" value="Send Message">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 八、文章模块(post) -->
+    <section class="post" id="post">
+        <div class="container">
+            <div class="page-header">
+                <h1>post</h1>
+            </div>
+            <div class="cow">
+                <!-- 文章1 -->
+                <div class="col-md-3">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <div class="imgbox"><img class="img-responsive" src="images/g-img-1.jpg" alt="..."></div>
+                            <h3>Blog Title Goes Here.</h3>
+                            <p>Il s'agit du texte de la description du produit, qui est édité en fonction du contenu.
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- 文章2 -->
+                <div class="col-md-3">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <div class="imgbox"><img class="img-responsive" src="images/g-img-2.jpg" alt="..."></div>
+                            <h3>Blog Title Goes Here.</h3>
+                            <p>Il s'agit du texte de la description du produit, qui est édité en fonction du contenu.
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- 文章3 -->
+                <div class="col-md-3">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <div class="imgbox"><img class="img-responsive" src="images/g-img-3.jpg" alt="..."></div>
+                            <h3>Blog Title Goes Here.</h3>
+                            <p>Il s'agit du texte de la description du produit, qui est édité en fonction du contenu.
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- 文章4 -->
+                <div class="col-md-3">
+                    <div class="thumbs text-center">
+                        <a href="#" class="thumbnail">
+                            <div class="imgbox"><img class="img-responsive" src="images/g-img-4.jpg" alt="..."></div>
+                            <h3>Blog Title Goes Here.</h3>
+                            <p>Il s'agit du texte de la description du produit, qui est édité en fonction du contenu.
+                            </p>
+                            <button type="button" class="btn btn-default btn-lg">read more</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 九、新闻模块(newsletter) -->
+    <section class="newsletter" id="newsletter">
+        <div class="container">
+
+            <h3>newsletter</h3>
+            <p>subscribe for latest upadates</p>
+
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+
+                    <form action="">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="enter your email">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">subscribe</button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 十、页脚模块(footer) -->
+    <section class="footer" id="footer">
+        <div class="container">
+            <footer id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="text-center">
+                                <h1>Coffee</h1>
+                                <p>Created By <a href="">Mr.Chi</a> Designer | All Rights Reserved!</p>
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-4">
+                                        <div class="icons text-center">
+                                            <i class="fa fa-wechat fa-1x"></i>
+                                            <i class="fa fa-qq fa-1x"></i>
+                                            <i class="fa fa-facebook fa-1x"></i>
+                                            <i class="fa fa-twitter fa-1x"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </section>
+
+
+    <!-- 登录模块 -->
+    <!-- 按钮 -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Launch demo modal
+    </button>
+
+    <!-- 弹窗 -->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+
+
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <input class="form-control" type="email" placeholder="enter your email" name="" id="">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="password" placeholder="enter your password" name="" id="">
+                        </div>
+                        <div class="form-txt">
+                            <div class="row">
+                                <div class="col-md-1 col-sm-1 col-xs-1">
+                                    <input type="checkbox" id="remenber" aria-label="...">
+                                </div>
+                                <div class="col-md-7 col-sm-7 col-xs-7">
+                                    <label for="remenber">remenber me</label>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <a href="">forgot password?</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 引入框架js -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

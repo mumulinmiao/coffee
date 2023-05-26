@@ -1,0 +1,318 @@
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+a{
+    text-decoration: none;
+    color:rgb(81, 42, 16);
+}
+a:hover{
+    text-decoration: none;
+    color:rgb(122, 49, 0);
+}
+
+nav{
+    padding: 4rem 0;
+}
+
+nav .logo{
+    font-size: 2rem;
+    color:#fff;
+    font-weight: bold;
+}
+
+nav .navbar-toggle{
+    margin:0;
+}
+
+nav .fa-navicon, nav .fa-times, nav .fa-user{
+    margin-top:1rem;
+}
+
+nav li a{
+    color:#fff;
+}
+
+nav.active{
+    background-color: #000;
+    padding: 0;
+}
+
+nav button i{
+    color:#fff;
+}
+
+nav .container{
+    position: relative;
+}
+
+nav .navbar-nav{
+    margin:0 3rem;
+}
+
+
+
+nav .toolbar{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+nav .toolbar .btnuser{
+    display: block;
+}
+
+/* 默认情况下 */
+.collapsed .fa-navicon{
+    display: block;
+}
+
+.collapsed .fa-times{
+    display: none;
+}
+
+/* 展开的情况下 */
+button .fa-navicon{
+    display: none;
+}
+
+button .fa-times{
+    display: block;
+}
+
+button:active .fa-navicon{
+    transform: rotate(180deg);
+}
+
+button:active .fa-times{
+    transform: rotate(-180deg);
+}
+
+.home{
+    background: url(../images/home-bg.jpg) top center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.home .jumbotron{
+    overflow: hidden;
+    padding: 20rem 0;
+    background-color: transparent;
+}
+
+.home h1{
+    color: #fff;
+}
+
+.about .container p{
+    line-height: 3.5rem;
+}
+.about .container .btn{
+    margin: 3rem 0;
+}
+.about .icon-box .icons{
+    background-color: #eee;
+    padding: 2.5rem 0 0.5rem;
+}
+
+section .page-header{
+    text-align: center;
+}
+
+/* 菜单模块 */
+.menu,.reviews,.post{
+    background-color: #eee;
+}
+
+.menu .thumbnail,.reviews .thumbnail,.post .thumbnail{
+    background-color: transparent;
+    padding: 3rem 2rem;
+    border: none;
+    /* border:10px solid red; */
+}
+.menu .thumbnail img,.reviews .thumbnail img{
+    height: 15rem;
+    border-radius: 50%;
+}
+.menu .thumbs:hover,.reviews .thumbs:hover,.post .thumbs:hover{
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transform: translateY(-1rem);
+}
+
+/* 相册模块 */
+
+.gallery .thumbnail{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: none;
+    height: 25rem;
+    margin-bottom: 3rem;
+    border-radius:0;
+    overflow: hidden;
+}
+.gallery .thumbnail img{
+    width: 100%;
+    height: 25rem;
+}
+.gallery .thumbnail:hover img{
+    transform: translateY(-100%);
+}
+.gallery .thumbnail .content{
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+    border: 0.1rem solid #512a10;
+    line-height:2.8rem;
+    padding: 3rem 2rem;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+.gallery .thumbnail:hover .content{
+    transform: translateY(0);
+}
+
+/* 联系模块 */
+
+.contact .icons{
+    border: 0.1rem solid #512a10;
+    padding: 4rem 2rem 3rem;
+}
+
+.contact .info{
+    margin-bottom: 4rem;
+}
+
+.contact iframe{
+    height: 39.5rem;
+}
+
+.contact h3{
+    margin-top: 0;
+}
+
+.contact .form-control{
+    margin: 0.7rem 0;
+    padding: 1.2rem 1.4rem;
+    height: auto;
+}
+
+.post{
+    padding: 0 0 4rem 0;
+}
+
+.post .thumbnail{
+    padding: 0 0 3rem 0;
+}
+
+.post .imgbox{
+    height: 20rem;
+    overflow: hidden;
+}
+
+.post .thumbs:hover{
+    transform: translateY(0);
+}
+
+.post .thumbs:hover img{
+    transform: scale(0.9);
+}
+
+.newsletter{
+    background-image: url(../images/newsletter-bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#fff;
+    padding: 2rem 0 4rem 0;
+}
+.newsletter h3{
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.newsletter .input-group-btn{
+    background-color: #fff;
+}
+.newsletter .form-control,.newsletter .btn{
+    height: 6rem;
+}
+
+footer{
+    padding: 2rem 0 4rem 0;
+}
+
+footer .icons i.fa{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border: 0.1rem solid #512a10;
+    /* font-size: 2rem; */
+    color: #512a10;
+}
+
+@media (max-width: 991px) {
+    html {
+      font-size: 62.5%;
+    }
+  }
+  
+@media (max-width: 768px) {
+    
+    nav{
+        padding: 0;
+    }
+
+    nav .navbar-nav{
+        background-color: #fff;
+    }
+    
+    nav a.logo{
+        padding: 2rem 1.5rem 0;
+    }
+
+     nav .navbar-toggle{
+        padding: 1.5rem 1.5rem 0;
+    }
+
+    nav .navbar-collapse{
+        padding: 0 0.5rem;
+    }
+
+    nav .nav{
+        margin:0;
+    }
+    
+    nav .nav a{
+        padding: 1rem 1.5rem;
+        color: #512a10;
+    }
+
+    .home .jumbotron{
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 450px) {
+
+    .home .jumbotron{
+        text-align: center;
+    }
+
+    html {
+      font-size: 50%;
+    }
+  }
